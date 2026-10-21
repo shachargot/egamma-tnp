@@ -1,0 +1,20 @@
+{
+  "BuToKJPsi": {
+    "files": {
+      "/eos/cms/store/group/phys_bphys/DiElectronX/sgottlie/ParkingDoubleMuonLowMassSkims/2026-10-21/2023preBPIX/mc/BuToKJPsi_JPsiToEE_SoftQCD_TuneCP5_13p6TeV_pythia8-evtgen/crab_2023preBPIX_BuToKJPsi_preBPIX/261021_*/0000/TnPTree_mc_*.root": "tnpEleTrig/fitter_tree",
+      "/eos/cms/store/group/phys_bphys/DiElectronX/sgottlie/ParkingDoubleMuonLowMassSkims/2026-10-21/2023postBPIX/mc/BuToKJPsi_JPsiToEE_SoftQCD_TuneCP5_13p6TeV_pythia8-evtgen/crab_2023postBPIX_BuToKJPsi_postBPIX/261021_*/0000/TnPTree_mc_*.root": "tnpEleTrig/fitter_tree"
+    },
+    "metadata": {
+      "isMC": true
+    }
+  },
+  "PromptJPsi": {
+    "files": {
+      "/eos/cms/store/group/phys_bphys/DiElectronX/sgottlie/ParkingDoubleMuonLowMassSkims/2026-10-21/2023preBPIX/mc/JPsiToEE_pth10toInf_TuneCP5_13p6TeV_pythia8/crab_2023preBPIX_JPsiEE_preBPIX/261021_*/0000/*.root": "tnpEleTrig/fitter_tree",
+      "/eos/cms/store/group/phys_bphys/DiElectronX/sgottlie/ParkingDoubleMuonLowMassSkims/2026-10-21/2023postBPIX/mc/JPsiToEE_pth10toInf_TuneCP5_13p6TeV_pythia8/crab_2023postBPIX_JPsiEE_postBPIX/261021_*/0000/*.root": "tnpEleTrig/fitter_tree"
+    },
+    "metadata": {
+      "isMC": true
+    }
+  }
+}

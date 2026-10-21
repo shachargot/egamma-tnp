@@ -1,0 +1,29 @@
+{
+  "workflow": "ElectronTagNProbeFromMiniNTuples",
+  "workflow_args": {
+    "filters": {
+      "passHltL1DoubleEGXer1p2dRMaxYFilter": "passHltL1DoubleEGXer1p2dRMaxYFilter",
+      "passHltDoubleEle6eta1p22EtFilter": "passHltDoubleEle6eta1p22EtFilter",
+      "passHltDoubleEle6eta1p22PixelMatchFilter": "passHltDoubleEle6eta1p22PixelMatchFilter",
+      "passHltDoubleEle6eta1p22PMS2Filter": "passHltDoubleEle6eta1p22PMS2Filter",
+      "passHltDoubleEle6eta1p22OneOEMinusOneOPFilter": "passHltDoubleEle6eta1p22OneOEMinusOneOPFilter",
+      "passHltDoubleEle6eta1p22DetaFilter": "passHltDoubleEle6eta1p22DetaFilter",
+      "passHltDoubleEle6eta1p22DphiFilter": "passHltDoubleEle6eta1p22DphiFilter",
+      "passHltDoubleEle6eta1p22Chi2Filter": "passHltDoubleEle6eta1p22Chi2Filter",
+      "passHltDoubleEle6eta1p22ValidHitsFilter": "passHltDoubleEle6eta1p22ValidHitsFilter",
+      "passHltDoubleEle6eta1p22NLayerITFilter": "passHltDoubleEle6eta1p22NLayerITFilter",
+      "passHltDoubleEle6eta1p22PMmMax6MassFilter": "passHltDoubleEle6eta1p22PMmMax6MassFilter"
+    }
+  },
+  "methods": [
+    {
+      "name": "get_nd_tnp_histograms",
+      "args": {
+        "filter": ["passHltL1DoubleEGXer1p2dRMaxYFilter", "passHltDoubleEle6eta1p22EtFilter", "passHltDoubleEle6eta1p22PixelMatchFilter", "passHltDoubleEle6eta1p22PMS2Filter", "passHltDoubleEle6eta1p22OneOEMinusOneOPFilter", "passHltDoubleEle6eta1p22DetaFilter", "passHltDoubleEle6eta1p22DphiFilter", "passHltDoubleEle6eta1p22Chi2Filter", "passHltDoubleEle6eta1p22ValidHitsFilter", "passHltDoubleEle6eta1p22NLayerITFilter", "passHltDoubleEle6eta1p22PMmMax6MassFilter"],
+	"mass_range": [2.5, 3.4],
+        "cut_and_count": false,
+	"vars": ["el_pt", "el_eta", "el_phi"]
+      }
+    }
+  ]
+}

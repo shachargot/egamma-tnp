@@ -351,12 +351,12 @@ def fill_pt_eta_phi_mll_histograms(
         eta_mask_pt_fail = (abs(eta_fail) > region_pt[0]) & (abs(eta_fail) < region_pt[1])
         hpt_pass = Hist(
             hist.axis.Variable(ptbins, name="pt", label="Pt [GeV]"),
-            hist.axis.Regular(80, 50, 130, name="mll", label="mll [GeV]"),
+            hist.axis.Regular(46, 2.5, 3.4, name="mll", label="mll [GeV]"),
             storage=hist.storage.Weight(),
         )
         hpt_fail = Hist(
             hist.axis.Variable(ptbins, name="pt", label="Pt [GeV]"),
-            hist.axis.Regular(80, 50, 130, name="mll", label="mll [GeV]"),
+            hist.axis.Regular(46, 2.5, 3.4, name="mll", label="mll [GeV]"),
             storage=hist.storage.Weight(),
         )
         hpt_pass.fill(pt_pass[eta_mask_pt_pass], mll_pass[eta_mask_pt_pass], weight=passing_probes_weight[eta_mask_pt_pass])
@@ -369,12 +369,12 @@ def fill_pt_eta_phi_mll_histograms(
         phi_mask_eta_fail = (abs(phi_fail) > region_eta[0]) & (abs(phi_fail) < region_eta[1])
         heta_pass = Hist(
             hist.axis.Variable(etabins, name="eta", label="eta"),
-            hist.axis.Regular(80, 50, 130, name="mll", label="mll [GeV]"),
+            hist.axis.Regular(46, 2.5, 3.4, name="mll", label="mll [GeV]"),
             storage=hist.storage.Weight(),
         )
         heta_fail = Hist(
             hist.axis.Variable(etabins, name="eta", label="eta"),
-            hist.axis.Regular(80, 50, 130, name="mll", label="mll [GeV]"),
+            hist.axis.Regular(46, 2.5, 3.4, name="mll", label="mll [GeV]"),
             storage=hist.storage.Weight(),
         )
         eta_mask_fail = plateau_mask_fail & phi_mask_eta_fail
@@ -389,12 +389,12 @@ def fill_pt_eta_phi_mll_histograms(
         eta_mask_phi_fail = (abs(eta_fail) > region_phi[0]) & (abs(eta_fail) < region_phi[1])
         hphi_pass = Hist(
             hist.axis.Variable(phibins, name="phi", label="phi"),
-            hist.axis.Regular(80, 50, 130, name="mll", label="mll [GeV]"),
+            hist.axis.Regular(46, 2.5, 3.4, name="mll", label="mll [GeV]"),
             storage=hist.storage.Weight(),
         )
         hphi_fail = Hist(
             hist.axis.Variable(phibins, name="phi", label="phi"),
-            hist.axis.Regular(80, 50, 130, name="mll", label="mll [GeV]"),
+            hist.axis.Regular(46, 2.5, 3.4, name="mll", label="mll [GeV]"),
             storage=hist.storage.Weight(),
         )
         phi_mask_pass = plateau_mask_pass & eta_mask_phi_pass
@@ -547,7 +547,7 @@ def fill_nd_mll_histograms(
         )
 
     axes = [hist.axis.Variable(egamma_tnp.binning.get(f"{var}_bins"), name=var, label=f"{var.capitalize()}") for var in vars]
-    axes.append(hist.axis.Regular(80, 50, 130, name="mll", label="mll [GeV]"))
+    axes.append(hist.axis.Regular(46, 2.5, 3.4, name="mll", label="mll [GeV]"))
 
     hpass = Hist(*axes, storage=hist.storage.Weight())
     hfail = Hist(*axes, storage=hist.storage.Weight())

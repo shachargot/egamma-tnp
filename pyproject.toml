@@ -7,7 +7,7 @@ name = "egamma-tnp"
 description = "E/Gamma Tag & Probe framework."
 readme = "README.md"
 license = {text = "BSD-3-Clause"}
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 authors = [
   { name = "Iason Krommydas", email = "ik23@rice.edu" },
 ]
